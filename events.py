@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 import requests
-import pandas as pd
 from csv import writer
 
 url = 'https://www.meetup.com/find/?allMeetups=true&keywords=React&radius=25&userFreeform=New+York%2C+New+York%2C+USA&eventFilter=all'
@@ -37,7 +36,6 @@ with open('events.csv', 'w') as csv_file:
 			print 'Event description: ', event_description
 
 			# 4. Time and date of the event
-			# time = event_soup.find('time', {'class:', 'eventStatusLabel'}).text
 			time_exist = event_soup.find('time')
 			time = time_exist.text if time_exist else 'Not specified'
 			print 'Date & time: ',time
