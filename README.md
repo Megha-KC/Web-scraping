@@ -1,7 +1,6 @@
 # Web-scraping
-My first attempt on web scraping.
-A python program that scrapes the meetup.com website to obtain details about the events that satisfy the below criteria:
-
+This project is my first attempt on web scraping.
+A python program that scrapes the 'meetup.com' website.
 
 Approach:
 I used BeautifulSoup to scrape the response from the website.
