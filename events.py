@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 import requests
-import pandas as pd
 from csv import writer
 
 url = 'https://www.meetup.com/find/?allMeetups=true&keywords=React&radius=25&userFreeform=New+York%2C+New+York%2C+USA&eventFilter=all'
